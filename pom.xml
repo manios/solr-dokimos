@@ -13,7 +13,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.version>4.1.7.RELEASE</spring.version>
-		<spring.data.solr.version>1.5.0.BUILD-SNAPSHOT</spring.data.solr.version>
+		<spring.data.solr.version>2.0.0.BUILD-SNAPSHOT</spring.data.solr.version>
 	</properties>
 
 	<dependencies>

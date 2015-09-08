@@ -12,7 +12,7 @@ public class App {
 
 	public static void main(String[] args) {
 
-		// Some code to test CloudSolrServer factory implementation in solr-4.10.2
+		// Some code to test CloudSolrClient factory implementation towards a solr-4.10.2 SolrCloud
 
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 

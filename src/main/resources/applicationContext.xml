@@ -24,8 +24,8 @@
 	<solr:repositories base-package="com.manios.solr.dokimos.repository" />
 
 	<!-- Configures CloudSolrServer using a factory bean -->
-	<bean id="cloudSolrServerFactory"
-		class="org.springframework.data.solr.server.support.CloudSolrServerFactoryBean">
+	<bean id="cloudSolrClientFactory"
+		class="org.springframework.data.solr.server.support.CloudSolrClientFactoryBean">
 		<property name="zkHost" value="127.0.0.1:2181,127.0.0.1:2182" />
 		<property name="collection" value="jet2pilot" />
 		<property name="zkConnectTimeout" value="2000" />
@@ -33,7 +33,7 @@
 
 	<!-- Configures Solr template -->
 	<bean id="solrTemplate" class="org.springframework.data.solr.core.SolrTemplate">
-		<constructor-arg index="0" ref="cloudSolrServerFactory" />
+		<constructor-arg index="0" ref="cloudSolrClientFactory" />
 	</bean>
 
 </beans>
